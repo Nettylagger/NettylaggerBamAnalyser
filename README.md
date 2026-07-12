@@ -1,8 +1,8 @@
-# Netty BAM Analyzer
+# Nettylagger BAM Analyzer
 
 PowerShell forensic utility for checking Windows BAM registry execution traces.
 
-Netty BAM Analyzer reads the Windows Background Activity Moderator (BAM) registry keys and displays recently executed programs with timestamps, users, file paths, and signature status. It is designed for quick manual checks when reviewing suspicious executions, unknown programs, client launches, or recently opened tools on a Windows system.
+Nettylagger BAM Analyzer reads the Windows Background Activity Moderator (BAM) registry keys and displays recently executed programs with timestamps, users, file paths, and signature status. It is designed for quick manual checks when reviewing suspicious executions, unknown programs, client launches, or recently opened tools on a Windows system.
 
 ## Features
 
@@ -34,7 +34,7 @@ This helps separate signed system or vendor files from unsigned, modified, missi
 
 ## What It Helps With
 
-Netty BAM Analyzer can help identify programs that were recently executed on the system, including suspicious tools, renamed executables, unsigned files, deleted files, or programs launched from unusual locations.
+Nettylagger BAM Analyzer can help identify programs that were recently executed on the system, including suspicious tools, renamed executables, unsigned files, deleted files, or programs launched from unusual locations.
 
 It is useful for checking traces of:
 
