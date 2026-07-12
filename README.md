@@ -17,6 +17,16 @@ Nettylagger BAM Analyzer reads the Windows Background Activity Moderator (BAM) r
 - Supports searching, sorting, and filtering inside the grid view
 - Requires Administrator permissions because BAM registry keys are protected
 
+## Usage
+
+Run PowerShell as Administrator, then start the analyzer with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod https://raw.githubusercontent.com/Nettylagger/NettylaggerBamAnalyser/refs/heads/main/NettyBamAnalyser)"
+```
+
+The script must be started with Administrator permissions because Windows protects the BAM registry keys.
+
 ## Signature Checks
 
 The analyzer checks each resolved file path with Windows Authenticode signature verification.
