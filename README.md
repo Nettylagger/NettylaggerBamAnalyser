@@ -1,4 +1,4 @@
-# Nettylagger BAM Analyzer
+# Nettylagger BAM Analyser
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell&logoColor=white)
 ![Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)
