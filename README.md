@@ -5,7 +5,7 @@
 ![Forensics](https://img.shields.io/badge/Forensics-BAM%20Registry-orange)
 ![Use](https://img.shields.io/badge/Use-Defensive%20Analysis-yellow)
 
-**Nettylagger BAM Analyzer** is a PowerShell forensic utility for checking Windows Background Activity Moderator
+**Nettylagger BAM Analyser** is a PowerShell forensic utility for checking Windows Background Activity Moderator
 execution traces. It reads BAM registry keys and displays recently executed programs with timestamps, users,
 resolved file paths, registry source paths, and Authenticode signature status.
 
