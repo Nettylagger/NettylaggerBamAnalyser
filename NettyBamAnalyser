@@ -61,15 +61,15 @@ $Banner = @"
                           / - \
                           |    \
                           || (__V
-'@
+"@
 
 # ===================== OUTPUT =====================
 
 Write-Host ""
-Write-Host $Banner -ForegroundColor Magenta
+Write-Host $Banner -ForegroundColor DarkYellow
 Write-Host ""
 
-Write-Host -ForegroundColor Magenta "   Made By Main2Packet. " -NoNewline
+Write-Host -ForegroundColor DarkYellow "   Made By Main2Packet. " -NoNewline
 Write-Host ""
 
 function Test-Admin {
@@ -78,7 +78,7 @@ function Test-Admin {
 }
 
 if (!(Test-Admin)) {
-    Write-Host "Please Run This Script as Admin." -ForegroundColor Magenta
+    Write-Host "Please Run This Script as Admin." -ForegroundColor DarkYellow
     Start-Sleep 10
     Exit
 }
@@ -87,7 +87,7 @@ $sw = [Diagnostics.Stopwatch]::StartNew()
 
 if (!(Get-PSDrive -Name HKLM -PSProvider Registry)){
     Try{New-PSDrive -Name HKLM -PSProvider Registry -Root HKEY_LOCAL_MACHINE}
-    Catch{Write-Host "Error Mounting HKEY_Local_Machine" -ForegroundColor DarkMagenta}
+    Catch{Write-Host "Error Mounting HKEY_Local_Machine" -ForegroundColor DarkYellow}
 }
 
 $bv = ("bam", "bam\State")
@@ -99,7 +99,7 @@ Try{
     }
 }
 Catch{
-    Write-Host "Error Parsing BAM Key. Likely unsupported Windows Version" -ForegroundColor Magenta
+    Write-Host "Error Parsing BAM Key. Likely unsupported Windows Version" -ForegroundColor DarkYellow
     Exit
 }
 
@@ -119,8 +119,8 @@ $Bam = Foreach ($Sid in $Users){
         $BamItems = Get-Item -Path "$($rp)UserSettings\$Sid" -ErrorAction SilentlyContinue |
         Select-Object -ExpandProperty Property
 
-        Write-Host -ForegroundColor Magenta "Extracting " -NoNewLine
-        Write-Host -ForegroundColor DarkMagenta "$($rp)UserSettings\$SID"
+        Write-Host -ForegroundColor DarkYellow "Extracting " -NoNewLine
+        Write-Host -ForegroundColor Yellow "$($rp)UserSettings\$SID"
 
         $bi = 0 
 
@@ -192,4 +192,4 @@ $sw.stop()
 $t = $sw.Elapsed.TotalMinutes
 
 Write-Host ""
-Write-Host "Elapsed Time $t Minutes" -ForegroundColor Magenta
+Write-Host "Elapsed Time $t Minutes" -ForegroundColor DarkYellow
